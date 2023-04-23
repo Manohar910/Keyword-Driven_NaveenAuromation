@@ -1,0 +1,29 @@
+package com.qa.base;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Base {
+
+	public WebDriver driver;
+	public Properties prop;
+
+	public void init_driver(String browserName) {
+
+		if (browserName.equals("chrome")) {
+
+			System.setProperty("webdriver.chrome.driver", "‪D:\\chromedriver.exe");
+
+			if (prop.getProperty("headless").equals("yes")) {
+
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless");
+				driver = new ChromeDriver(options);
+			} else {
+				driver = new ChromeDRiver();
+			}
+		}
+	}
+}

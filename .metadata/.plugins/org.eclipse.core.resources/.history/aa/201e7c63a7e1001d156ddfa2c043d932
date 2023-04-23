@@ -1,0 +1,12 @@
+package com.qa.base;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class Base {
+
+	public WebDriver driver;
+	public Properties prop;
+
+}

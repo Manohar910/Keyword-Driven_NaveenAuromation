@@ -1,0 +1,22 @@
+package com.qa.engine;
+
+import java.util.Properties;
+
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.openqa.selenium.WebDriver;
+
+public class KeyWordEngine {
+
+	public WebDriver driver;
+	public Properties prop;
+
+	public static Workbook book;
+	public static Sheet sheet;
+
+	public final String Scenario_Sheet_Path = "D:\\Interview_Workspace\\KeyWordDriven\\src\\main\\java\\com\\qa\\excelScenarios\\ExcelKeyWordDriven.xlsx";
+
+	public void stratExecution(String sheetName) {
+
+	}
+}
